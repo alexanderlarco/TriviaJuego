@@ -4,12 +4,15 @@
   color: white;
   background-image: url(assets/vinculacion.jpeg);
   background-repeat: no-repeat;
+  background-size: 1300px;
+  
+
+ 
 }
 
 .main {
   width: 75%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230),
-    url("https://i.ytimg.com/vi/yQbJRGs0fy8/maxresdefault.jpg") center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230),url("https://i.ytimg.com/vi/yQbJRGs0fy8/maxresdefault.jpg") center;
   display: flex;
   flex-direction: column;
 }
@@ -180,8 +183,8 @@
   justify-content: end;
   align-items: center;
   position: relative;
-  top: 800px;
-  left: 180px;
+  top: 725px;
+  left: 200px;
 }
 
 .startInput {
@@ -208,3 +211,4 @@
   font-size: 18px;
   font-weight: 500;
 }
+#buton-reiniciar{background-color:#e9aa24}

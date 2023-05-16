@@ -5,7 +5,7 @@ import Timer from "./components/Timer";
 import Trivia from "./components/Trivia";
 
 function App() {
-  const data = [
+  const dataAsk = [
     {
       id: 1,
       question: "Diabetes, ¿qué es eso?",
@@ -52,7 +52,8 @@ function App() {
     },
     {
       id: 3,
-      question: "¿Por qué un niño/a con diabetes tipo 1 debe depender de insulina?",
+      question:
+        "¿Por qué un niño/a con diabetes tipo 1 debe depender de insulina?",
       answers: [
         {
           text: "Porque sin insulina las células no tienen azúcar de donde sacar energía",
@@ -64,17 +65,18 @@ function App() {
         },
         {
           text: "Porque sin insulina en el cuerpo, el azúcar se amontona en la sangre",
-          correct: true,
+          correct: false,
         },
         {
           text: "Todas las anteriores",
-          correct: false,
+          correct: true,
         },
       ],
     },
     {
       id: 4,
-      question: "¿Qué sucede cuando un niño con diabetes tipo 1 no se inyecta insulina?",
+      question:
+        "¿Qué sucede cuando un niño con diabetes tipo 1 no se inyecta insulina?",
       answers: [
         {
           text: "Glucosa por encima de 300 y ningún otro síntoma",
@@ -82,7 +84,7 @@ function App() {
         },
         {
           text: "Feliz, quiere, jugar y aprender",
-          correct: true,
+          correct: false,
         },
         {
           text: "Daño en el cuerpo, cara amarillenta y ojos vidriosos",
@@ -90,7 +92,7 @@ function App() {
         },
         {
           text: "Dolor de barriga, decaimiento, malestar general, glucosa elevada",
-          correct: false,
+          correct: true,
         },
       ],
     },
@@ -121,7 +123,7 @@ function App() {
       question: "¿Cuáles son los síntomas de hiperglicemia? Mencione 3",
       answers: [
         {
-          text: "Demasiada sed y hambre",
+          text: "Demasiada sed,hambre y orina",
           correct: true,
         },
         {
@@ -228,7 +230,8 @@ function App() {
     },
     {
       id: 11,
-      question: "¿Por qué es importante llevar un cuaderno de control de glicemias?",
+      question:
+        "¿Por qué es importante llevar un cuaderno de control de glicemias?",
       answers: [
         {
           text: "Para saber cómo están tus niveles de glucosa.",
@@ -250,7 +253,8 @@ function App() {
     },
     {
       id: 12,
-      question: "Cada cuánto se debe hacer el examen de hemoglobina glicosilada HB1AC",
+      question:
+        "Cada cuánto se debe hacer el examen de hemoglobina glicosilada HB1AC",
       answers: [
         {
           text: "Cada año.",
@@ -272,7 +276,8 @@ function App() {
     },
     {
       id: 13,
-      question: "Qué pasa con la glucosa del cuerpo cuando se come carbohidratos",
+      question:
+        "Qué pasa con la glucosa del cuerpo cuando se come carbohidratos",
       answers: [
         {
           text: "Tu glucosa se eleva. ",
@@ -297,19 +302,19 @@ function App() {
       question: "Qué se debe hacer ante un síntoma de hipoglucemia",
       answers: [
         {
-          text: "Medir y hacer ejercicio.",
+          text: "Medir la glucosa y hacer ejercicio.",
           correct: false,
         },
         {
-          text: "Tomarse un vaso Jugo o algo líquido con azúcar.",
+          text: "Medir la glucosa y tomarse un vaso de líquido azucarado.",
           correct: true,
         },
         {
-          text: "Acostarte a descansar.",
+          text: "Medir la glucosa y acostarte a descansar.",
           correct: false,
         },
         {
-          text: " Esperar q pase el síntoma hasta estar bien.",
+          text: "Chupar 2 caramelos y medirse la glucosa.",
           correct: false,
         },
       ],
@@ -319,30 +324,31 @@ function App() {
       question: "Qué se debe hacer si se presenta un síntoma de hiperglucemia?",
       answers: [
         {
-          text: "Inyectar insulina",
+          text: "Medir la glucosa, inyectar insulina y tomar agua",
           correct: true,
         },
         {
-          text: "Tomar agua.",
+          text: "Medir la glucosa, tomar agua y esperar.",
           correct: false,
         },
         {
-          text: "Comer alimentos que contengan azúcar.",
+          text: "Comer alimentos que contengan azúcar y medirse la glucosar.",
           correct: false,
         },
         {
-          text: "Hacer ejercicio.",
+          text: "Medir la glucosa y hacer ejercicio.",
           correct: false,
         },
       ],
     },
     {
       id: 16,
-      question: "Cuáles son los alimentos que contienen demasiados carbohidratos",
+      question:
+        "¿Cuáles son los alimentos que no contienen carbohidratos?",
       answers: [
         {
           text: "Pan, colas, pasteles, arroz.",
-          correct: true,
+          correct: false,
         },
         {
           text: "Zanahoria, remolacha, tomate, lechuga.",
@@ -350,7 +356,7 @@ function App() {
         },
         {
           text: "Pescado, pollo, carne y huevo.",
-          correct: false,
+          correct: true,
         },
         {
           text: "Manzana, frutillas, pera",
@@ -360,18 +366,18 @@ function App() {
     },
     {
       id: 17,
-      question: "Una dieta saludable para una persona con diabetes es:",
+      question: "Una dieta saludable para una persona con diabetes tipo 1 es:",
       answers: [
         {
-          text: "Restringir la ingesta de alimentos",
+          text: "Restringir la ingesta de carbohidratoss",
           correct: false,
         },
         {
-          text: "Régimen alimenticio que ayude a mantener o mejorar la salud, que debe ser individualizada y realizada por una nutricionista",
+          text: "Régimen alimenticio que debe ser individualizado y realizada por una nutricionista",
           correct: true,
         },
         {
-          text: "Es única para personas con diabetes de todas las edades",
+          text: "Una dieta igual que la indicada a personas con diabetes tipo 2",
           correct: false,
         },
         {
@@ -382,18 +388,19 @@ function App() {
     },
     {
       id: 18,
-      question: "Un hábito saludable para la alimentación de la persona con diabetes consiste en:",
+      question:
+        "Un hábito saludable para la alimentación de la persona con diabetes consiste en:",
       answers: [
         {
           text: "Tomar 2 vasos de agua al día",
           correct: false,
         },
         {
-          text: "Respetar la cantidad y el horario de las comidas",
+          text: "Respetar las porciones y el horario de las comidas",
           correct: true,
         },
         {
-          text: "Fraccionar la alimentación a cada hora",
+          text: "Fraccionar la alimentación a cada 2 horas",
           correct: false,
         },
         {
@@ -419,25 +426,26 @@ function App() {
           correct: false,
         },
         {
-          text: "Ninguna de las anteriores",
+          text: "Con cáscara y cruda",
           correct: true,
         },
       ],
     },
     {
       id: 20,
-      question: " El conteo de carbohidratos es una herramienta que permite principalmente:",
+      question:
+        "El conteo de carbohidratos es una herramienta que permite principalmente:",
       answers: [
         {
           text: "Comer el alimento que uno desee",
           correct: false,
         },
         {
-          text: "Controlar las glicemias",
+          text: "Controlar las glucemias",
           correct: false,
         },
         {
-          text: "Ajustar la insulina a la cantidad de carbohidratos",
+          text: "Ajustar la insulina a la cantidad de carbohidratos consumidos",
           correct: true,
         },
         {
@@ -455,25 +463,25 @@ function App() {
           correct: false,
         },
         {
-          text: "Alimentos que no contienen azúcar, grasa ni carbohidratos",
+          text: "Alimentos que no contienen azúcar, grasa, ni carbohidratos",
           correct: false,
         },
         {
-          text: "Alimentos que toda persona con DM1 siempre debe comerlos",
+          text: "Alimentos ideales para toda persona con diabetes tipo 1",
           correct: false,
         },
         {
-          text: "Ninguno de las anteriores",
+          text: "Alimentos que solo tienen menor porcentaje de algún componente en relación al alimento",
           correct: true,
         },
       ],
     },
     {
       id: 22,
-      question: "En caso de una hipoglicemia en el colegio:",
+      question: "En caso de un síntoma de hipoglucemia en el colegio:",
       answers: [
         {
-          text: "Es importante que mis compañeros y profesor sepan y comprendan que necesito tomar azúcar en clase.",
+          text: "No moverme, medir la glucosa e inmediatamente tomar un vaso de  bebida azucarada",
           correct: true,
         },
         {
@@ -485,14 +493,15 @@ function App() {
           correct: false,
         },
         {
-          text: "Todas las anteriores",
+          text: "Debo ponerme insulina y no comer",
           correct: false,
         },
       ],
     },
     {
       id: 23,
-      question: "Una persona con diabetes está resolviendo una prueba escolar que situación puede ocurrirle:",
+      question:
+        "Una persona con diabetes está resolviendo una prueba escolar, qué situación puede ocurrirle?",
       answers: [
         {
           text: "El estrés puede elevar los niveles de glucosa en sangre",
@@ -514,10 +523,11 @@ function App() {
     },
     {
       id: 24,
-      question: "Para una persona con diabetes tipo 1 los refrigerios de media mañana y media tarde deben ser:",
+      question:
+        "Para una persona con diabetes tipo 1, los refrigerios de media mañana y media tarde deben ser:",
       answers: [
         {
-          text: "Ricos en grasa, pero antes debe medir la glucosa y si es necesario aplicarse insulina",
+          text: "Refrigerios de 15 o 20 gramos de carbohidratos y si es necesario aplicarse insulina",
           correct: true,
         },
         {
@@ -536,7 +546,8 @@ function App() {
     },
     {
       id: 25,
-      question: "¿Qué efectos tiene el ejercicio sobre el nivel de glucosa en sangre?",
+      question:
+        "¿Qué efectos tiene el ejercicio sobre el nivel de glucosa en sangre?",
       answers: [
         {
           text: "Aumenta la absorción de la insulina",
@@ -556,86 +567,230 @@ function App() {
         },
       ],
     },
-    /*
-    26.- Después del ejercicio intenso
-Existe un riesgo mayor de hipoglicemia varias horas más tarde
-Existe un riesgo mayor de hiperglicemia en el momento de hacer ejercicio
-Existe la probabilidad de producir una cetoacidosis
-Tener un coma diabético
-R: a) Después de un ejercicio intenso existirá un riesgo mayor de hipoglicemia varias horas más tarde (por la tarde o por la noche), ya que durante el ejerció se habrá utilizado la reserva de glucógeno del hígado.
-
-27.- ¿Puede el ejercicio aumentar el nivel de glucosa en sangre? 
-Si
-No
-Las 2 respuesta son correctas
-Ninguna de la respuesta es correcta
-R: a) El nivel de glucosa en sangre aumentará por el ejercicio si no hay suficiente insulina. Si la glucosa es mayor a 270 mg/dl se debe hacer una prueba de cetonas antes de empezar el ejercicio. Si los niveles de cetonas están elevados no se deberá hacer ejercicio hasta después de una o dos horas de haberse suministrado insulina adicional.
-
-28.- Al hacer ejercicio es importante hidratarse 
-a) Antes de realizar la actividad 
-b) Durante la actividad
-c) Después de la actividad
-d) Todas
-R: d) Es importante hidratarse antes de iniciar la actividad física, cuando se está realizando y al finalizar para reponer los líquidos perdidos. 
-29. Cuando el nivel de glucosa en la sangre es alta con frecuencia se experimenta:
-a)	Menos hambre
-b)	Más hambre
-c)	Ninguna de las dos
-d)	No se siente nada
-Respuesta y explicación: b) porque tus células no están recibiendo su alimento
- 
-30. El llamado “fenómeno del alba” o “fenómeno del amanecer” hace referencia a:
-a) 	Niveles de glucosa elevadas por la mañana
-b)	Niveles de glucosa bajas por la tarde
-c)	Ninguna de las dos. 
-d) 	Niveles de glucosa bajos por las madrugadas
-Respuesta y explicación: a) La hormona de crecimiento que se produce por la noche va a afectar el efecto de estas dosis de insulina.
- 
-31. Cuando el nivel de glucosa en sangre es alto:
-a)	El estómago se vacía lentamente
-b)	El estómago se vacía rápidamente 
-c)	Ninguna de los dos
-d) 	El estómago no se vacía
-Respuesta y explicación: a) porque los músculos del estómago se contraen más lentamente y esto ocasiona que el estómago no se vacíe correctamente, esto es lo que se llama gastroparesia.
-
-32. La absorción de insulina:
-a)	Es más rápido en el abdomen que en otra zona 
-b)	Es más rápido en los muslos 
-c)	Es más rápido en las nalgas que en el abdomen
-d) 	Es más rápido en el brazo que en otra zona
-Respuesta y explicación: a) Esto se debe a que el flujo sanguíneo en la grasa subcutánea del abdomen es comparativamente mayor que en la del muslo. 
-
-33. La insulina humana para no perder su acción
-a)	Debe estar almacenada en la oscuridad
-b)	Debe mantenerse a temperatura ambiente (sin exponerle al sol)
-c)	Debe estar en el congelador
-d) 	No importa si la dejo al sol
-Respuesta y explicación: b) además de perder su acción puede dañarse.
-
-34. Si tienes vómito sin diarrea son síntomas frecuentes de:
-a)	Deficiencia de insulina por un tiempo prolongado
-b) 	Una hiperglicemia
-c)	Ninguna de las dos
-d) 	Consumo de un alimento en mal estado
-Respuesta: a) quiere decir que está en una hiperglicemia y que también está pasando por un proceso de gastroparesia.
-*/
+    {
+      id: 26,
+      question:
+        "Después del ejercicio intenso",
+      answers: [
+        {
+          text: "Existe un riesgo mayor de hipoglucemia varias horas más tarde",
+          correct: true,
+        },
+        {
+          text: "Existe un riesgo mayor de hiperglucemia en el momento de hacer ejercicio",
+          correct: false,
+        },
+        {
+          text: "Existe la probabilidad de producir una cetoacidosis",
+          correct: false,
+        },
+        {
+          text: "Tener un coma diabético",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 27,
+      question:
+        "¿Algún tipo de ejercicio puede aumentar el nivel de glucosa en sangre?",
+      answers: [
+        {
+          text: "Si, cuando son ejercicios anaeróbicos",
+          correct: true,
+        },
+        {
+          text: "Si, cuando son ejercicios aeróbicos",
+          correct: false,
+        },
+        {
+          text: "Si, cualquier tipo de ejercicio",
+          correct: false,
+        },
+        {
+          text: "Ninguna de las respuestas son correctas",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 28,
+      question:
+        "Al hacer ejercicio es importante hidratarse",
+      answers: [
+        {
+          text: "Antes de realizar la actividad ",
+          correct: false,
+        },
+        {
+          text: "Durante la actividad",
+          correct: false,
+        },
+        {
+          text: "Después de la actividad",
+          correct: false,
+        },
+        {
+          text: "Todas las anteriores",
+          correct: true,
+        },
+      ],
+    },
+    {
+      id: 29,
+      question:
+        "Al hacer ejercicio es importante hidratarse",
+      answers: [
+        {
+          text: "Menos hambre",
+          correct: false,
+        },
+        {
+          text: "Más hambre",
+          correct: true,
+        },
+        {
+          text: "Ninguna de las dos",
+          correct: false,
+        },
+        {
+          text: "No se siente nada",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 30,
+      question:
+        "El llamado “fenómeno del alba” o “fenómeno del amanecer” hace referencia a:",
+      answers: [
+        {
+          text: "Niveles de glucosa elevadas por la mañana",
+          correct: true,
+        },
+        {
+          text: "Niveles de glucosa bajas por la tarde",
+          correct: false,
+        },
+        {
+          text: "Ninguna de las dos",
+          correct: false,
+        },
+        {
+          text: "Niveles de glucosa bajos por las madrugadas",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 31,
+      question:
+        "Cuando el nivel de glucosa en sangre es alto:",
+      answers: [
+        {
+          text: "El estómago se vacía lentamente",
+          correct: true,
+        },
+        {
+          text: "El estómago se vacía rápidamente",
+          correct: false,
+        },
+        {
+          text: "Ninguna de las dos",
+          correct: false,
+        },
+        {
+          text: "El estómago no se vacía",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 32,
+      question:
+        "La absorción de insulina:",
+      answers: [
+        {
+          text: "Es más rápido en el abdomen que en otra zona",
+          correct: true,
+        },
+        {
+          text: "Es más rápido en los muslos ",
+          correct: false,
+        },
+        {
+          text: "Es más rápido en las nalgas que en el abdomen",
+          correct: false,
+        },
+        {
+          text: "Es más rápido en el brazo que en otra zona",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 33,
+      question:
+        "La insulina humana para no perder su acción",
+      answers: [
+        {
+          text: "Debe estar almacenada en la oscuridad",
+          correct: false,
+        },
+        {
+          text: "Debe mantenerse de 2 a 8 grados de temperatura",
+          correct: true,
+        },
+        {
+          text: "Debe estar en el congelador",
+          correct: false,
+        },
+        {
+          text: "No importa si la dejo al sol",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 34,
+      question:
+        "Si tienes vómito sin diarrea son síntomas frecuentes de:",
+      answers: [
+        {
+          text: "Deficiencia de insulina por un tiempo prolongado",
+          correct: true,
+        },
+        {
+          text: "Una hiperglucemia",
+          correct: false,
+        },
+        {
+          text: "Ninguna de las dos",
+          correct: false,
+        },
+        {
+          text: "Consumo de un alimento en mal estado",
+          correct: false,
+        },
+      ],
+    },
   ];
-  let listNumberQuestions = []
 
-  const randomNumber = () => {
-    let number = Math.floor(Math.floor(Math.random() * data.length - 1) + 1)
-    if (listNumberQuestions.includes(number)) {
-      number = Math.floor(Math.floor(Math.random() * data.length - 1) + 1)
-    }
-    listNumberQuestions.push(number);
-    return number
+
+
+  function shuffleArray(array) {
+    array.sort(() => Math.random() - 0.5);
   }
+
+  const data = useMemo(() => {
+    shuffleArray(dataAsk);
+    return dataAsk;
+  }, [dataAsk]);
 
   const [username, setUsername] = useState(null);
   const [timeOut, setTimeOut] = useState(false);
-  const [questionNumber, setQuestionNumber] = useState(randomNumber());
+  const [questionNumber, setQuestionNumber] = useState(1);
   const [earned, setEarned] = useState("");
-
 
   const moneyPyramid = useMemo(
     () =>
@@ -673,9 +828,8 @@ Respuesta: a) quiere decir que está en una hiperglicemia y que también está p
     window.location.reload();
   }
   useEffect(() => {
-    console.log(listNumberQuestions);
     questionNumber > 1 &&
-      setEarned(moneyPyramid[questionNumber].amount);
+    setEarned(moneyPyramid.find((m) => m.id === questionNumber - 1).amount);
   }, [questionNumber, moneyPyramid]);
 
   return (
@@ -690,7 +844,6 @@ Respuesta: a) quiere decir que está en una hiperglicemia y que también está p
                 <h1 className="endText">Tu ganaste: {earned}</h1>
                 <button onClick={reload}>Reiniciar</button>
               </div>
-
             ) : (
               <>
                 <div className="top">
@@ -717,7 +870,7 @@ Respuesta: a) quiere decir que está en una hiperglicemia y que también está p
               {moneyPyramid.map((m) => (
                 <li
                   className={
-                    listNumberQuestions.length === m.id
+                    questionNumber === m.id
                       ? "moneyListItem active"
                       : "moneyListItem"
                   }
