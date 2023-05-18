@@ -842,7 +842,7 @@ function App() {
             {timeOut ? (
               <div className="endText">
                 <h1 className="endText">Tu ganaste: {earned}</h1>
-                <button onClick={reload}>Reiniciar</button>
+                <button id="buton-reiniciar" onClick={reload}>Reiniciar</button>
               </div>
             ) : (
               <>
